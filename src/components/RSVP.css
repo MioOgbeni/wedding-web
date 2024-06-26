@@ -1,0 +1,8 @@
+/* RSVP.css */
+.rsvp-container {
+  width: 100%;       /* Adjust the width as needed */
+  height: 100vh;     /* Adjust the height based on your layout */
+  overflow: hidden;  /* Prevents scrolling inside the iframe */
+  margin-top: 50px;
+}
+  

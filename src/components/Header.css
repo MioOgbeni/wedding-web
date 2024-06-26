@@ -1,0 +1,142 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 0px;
+  background-color: #2e7a3c;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.logo {
+  width: 100px; /* Adjust based on your logo's design */
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+.logo-text {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.nav-item {
+  flex: 1; /* Ensure all nav items take equal space */
+  display: flex;
+  justify-content: center;
+  position: relative; /* Needed for the pseudo-elements */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 15px 20px;
+  border-radius: 20px 20px 0px 0px;
+  width: 100px;
+  text-align: center;
+  position: relative; /* Needed for the pseudo-elements */
+  z-index: 1; /* Ensure it is above the pseudo-elements */
+  transition: all 0.0s ease;
+}
+
+.nav-link:hover {
+  background-color: #1d5c27; /* Darker green for hover effect */
+  z-index: 3; /* Ensure it is above the pseudo-elements */
+}
+
+.nav-link:hover::before {
+  content: '';
+  position: absolute;
+  width: 20px; /* Adjust for the size of the curve */
+  height: 40px; /* Adjust for the size of the curve */
+  background-color: transparent;
+  z-index: 2; /* Place behind the nav-link */
+}
+
+.nav-link:hover::after {
+  content: '';
+  position: absolute;
+  width: 40px; /* Adjust for the size of the curve */
+  height: 20px; /* Adjust for the size of the curve */
+  background-color: transparent;
+  z-index: 2; /* Place behind the nav-link */
+}
+
+.nav-link:hover::before {
+  bottom: -10px;
+  left: -30px;
+  border-top-right-radius: 20px;
+  rotate: 90deg;
+  box-shadow: 0 -20px 0 0 #1d5c27;
+}
+
+.nav-link:hover::after {
+  bottom: 0px;
+  right:  -40px;
+  border-bottom-left-radius: 20px;
+  box-shadow: -20px 0 0 0 #1d5c27;
+}
+
+.nav-link.active {
+  background-color: #ffffff; /* White background for active state */
+  color: #2e7a3c; /* Green text color for active state */
+}
+
+.nav-link.active::before {
+  content: '';
+  position: absolute;
+  width: 20px; /* Adjust for the size of the curve */
+  height: 40px; /* Adjust for the size of the curve */
+  background-color: transparent;
+  z-index: -1; /* Place behind the nav-link */
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  width: 40px; /* Adjust for the size of the curve */
+  height: 20px; /* Adjust for the size of the curve */
+  background-color: transparent;
+  z-index: -1; /* Place behind the nav-link */
+}
+
+.nav-link.active::before {
+  bottom: -10px;
+  left: -30px;
+  border-top-right-radius: 20px;
+  rotate: 90deg;
+  box-shadow: 0 -20px 0 0 #ffffff;
+}
+
+.nav-link.active::after {
+  bottom: 0px;
+  right:  -40px;
+  border-bottom-left-radius: 20px;
+  box-shadow: -20px 0 0 0 #ffffff;
+}
+
+.selector-row {
+  width: 100%;
+  height: 5px;
+  background-color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.selector-row-hover {
+  background-color: #1d5c27;
+}
