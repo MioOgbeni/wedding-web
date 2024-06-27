@@ -3,7 +3,7 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: #2e7a3c;
+  background-color: #ffffff;
   font-weight: 300;
 }
 
@@ -28,27 +28,36 @@ header {
 
 /* Remove hover effects on burger icon */
 .bm-burger-bars {
-  background: #fff;
+  background: #2e7a3c;
   border-radius: 5px;
+  height: 5px !important; /* Adjust the height to make the lines thinner */
 }
 
 .bm-burger-bars-hover {
-  background: #fff; /* Match the background color to remove hover effect */
+  background: #2e7a3c; /* Match the background color to remove hover effect */
 }
 
-/* Remove close cross from burger menu */
-.bm-cross-button {
-  display: none; /* Hide the close cross button */
+/* Remove hover effects on burger icon */
+.bm-cross {
+  background: #2e7a3c !important;
+  border-radius: 5px !important;
+  width: 5px !important;
+  height: 36px !important; /* Adjust the height to make the lines thinner */
+}
+
+.bm-cross-hover {
+  background: #2e7a3c !important; /* Match the background color to remove hover effect */
 }
 
 .bm-menu {
   position: relative;
   height: 100%;
-  background: #2e7a3c;
+  background: #ffffff;
   padding: 1.5em 1.5em 0;
   font-size: 1.4em;
   font-family: FenomenSans;
   font-weight: 400;
+  padding-top: 100px;
 }
 
 .bm-menu-wrap::before {
@@ -61,25 +70,23 @@ header {
 }
 
 .bm-morph-shape {
-  fill: #2e7a3c;
+  fill: #ffffff;
 }
 
 .bm-item-list {
-  color: #fff;
+  color: #2e7a3c;
   padding: 0.8em;
 }
 
 .bm-item {
   display: inline-block;
   text-decoration: none;
-  color: #fff;
-  transition: color 0.3s;
-  margin-bottom: 15px;
+  color: #2e7a3c;
+  margin-bottom: 15px !important;
 }
 
-.bm-item:hover {
-  margin-bottom: 15px;
-  text-decoration-line: underline;
+.bm-item:active {
+  color: red !important;
 }
 
 /* Hide the mobile menu on larger screens */
@@ -89,6 +96,10 @@ header {
 
 .bm-burger-button {
   display: none; /* Hide the burger button by default */
+}
+
+.bm-cross-button {
+  display: none; /* Hide the cross button by default */
 }
 
 @media (max-width: 768px) {
@@ -102,6 +113,17 @@ header {
     top: 0px; 
   }
 
+  .bm-cross-button {
+    display: block !important; /* Show the burger button on small screens */
+    position: fixed !important;
+    width: 36px !important;
+    height: 36px !important;
+    right: 42px !important;
+    top: 27px !important;
+    border-radius: 10% !important;
+    z-index: 2000 !important;
+  }
+
   .bm-burger-button {
     display: block; /* Show the burger button on small screens */
     position: fixed;
@@ -110,7 +132,10 @@ header {
     right: 36px;
     top: 36px;
     border-radius: 10%;
-    z-index: 2000 !important;
+  }
+
+  .bm-burger-bars-hover {
+    opacity: 1 !important;
   }
 }
 
@@ -148,7 +173,7 @@ header {
 
 .nav-link {
   text-decoration: none;
-  color: #ffffff;
+  color: #2e7a3c;
   font-size: 18px;
   padding: 15px 15px;
   border-radius: 20px 20px 0px 0px;
@@ -157,80 +182,4 @@ header {
   position: relative; /* Needed for the pseudo-elements */
   z-index: 1; /* Ensure it is above the pseudo-elements */
   transition: all 0.0s ease;
-}
-
-.nav-link:hover {
-  background-color: #1d5c27; /* Darker green for hover effect */
-  z-index: 3; /* Ensure it is above the pseudo-elements */
-}
-
-.nav-link:hover::before {
-  content: '';
-  position: absolute;
-  width: 20px; /* Adjust for the size of the curve */
-  height: 40px; /* Adjust for the size of the curve */
-  background-color: transparent;
-  z-index: 2; /* Place behind the nav-link */
-}
-
-.nav-link:hover::after {
-  content: '';
-  position: absolute;
-  width: 40px; /* Adjust for the size of the curve */
-  height: 20px; /* Adjust for the size of the curve */
-  background-color: transparent;
-  z-index: 2; /* Place behind the nav-link */
-}
-
-.nav-link:hover::before {
-  bottom: -10px;
-  left: -30px;
-  border-top-right-radius: 20px;
-  rotate: 90deg;
-  box-shadow: 0 -20px 0 0 #1d5c27;
-}
-
-.nav-link:hover::after {
-  bottom: 0px;
-  right:  -40px;
-  border-bottom-left-radius: 20px;
-  box-shadow: -20px 0 0 0 #1d5c27;
-}
-
-.nav-link.active {
-  background-color: #ffffff; /* White background for active state */
-  color: #2e7a3c; /* Green text color for active state */
-}
-
-.nav-link.active::before {
-  content: '';
-  position: absolute;
-  width: 20px; /* Adjust for the size of the curve */
-  height: 40px; /* Adjust for the size of the curve */
-  background-color: transparent;
-  z-index: -1; /* Place behind the nav-link */
-}
-
-.nav-link.active::after {
-  content: '';
-  position: absolute;
-  width: 40px; /* Adjust for the size of the curve */
-  height: 20px; /* Adjust for the size of the curve */
-  background-color: transparent;
-  z-index: -1; /* Place behind the nav-link */
-}
-
-.nav-link.active::before {
-  bottom: -10px;
-  left: -30px;
-  border-top-right-radius: 20px;
-  rotate: 90deg;
-  box-shadow: 0 -20px 0 0 #ffffff;
-}
-
-.nav-link.active::after {
-  bottom: 0px;
-  right:  -40px;
-  border-bottom-left-radius: 20px;
-  box-shadow: -20px 0 0 0 #ffffff;
 }

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import { slide as Menu } from 'react-burger-menu';
 import './Header.css'; // Import the CSS for styling
-import logo from '../assets/images/logo.svg';
+import logo from '../assets/images/logo-green.svg';
 
 function Header() {
   return (
