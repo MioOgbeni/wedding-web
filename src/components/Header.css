@@ -3,9 +3,115 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  padding-bottom: 0px;
   background-color: #2e7a3c;
   font-weight: 300;
+}
+
+.bm-overlay {
+  top: 0px;
+  left: 0px;
+  background: transparent !important;
+}
+
+/* Ensure no margins or padding are causing gaps */
+.bm-menu-wrap,
+.bm-menu,
+.bm-item-list,
+.bm-item,
+.bm-item:hover {
+  margin: 0;
+  padding: 0;
+  border: none !important; /* Forcefully remove any border */
+  outline: none !important; /* Remove any outline that might appear as a border */
+  box-shadow: none; /* Remove any box-shadow that might appear as a border */
+}
+
+/* Remove hover effects on burger icon */
+.bm-burger-bars {
+  background: #fff;
+  border-radius: 5px;
+}
+
+.bm-burger-bars-hover {
+  background: #fff; /* Match the background color to remove hover effect */
+}
+
+/* Remove close cross from burger menu */
+.bm-cross-button {
+  display: none; /* Hide the close cross button */
+}
+
+.bm-menu {
+  position: relative;
+  height: 100%;
+  background: #2e7a3c;
+  padding: 1.5em 1.5em 0;
+  font-size: 1.4em;
+  font-family: FenomenSans;
+  font-weight: 400;
+}
+
+.bm-menu-wrap::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 10px; /* Adjust the width of the shadow */
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3); /* Add shadow on the left */
+}
+
+.bm-morph-shape {
+  fill: #2e7a3c;
+}
+
+.bm-item-list {
+  color: #fff;
+  padding: 0.8em;
+}
+
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+  margin-bottom: 15px;
+}
+
+.bm-item:hover {
+  margin-bottom: 15px;
+  text-decoration-line: underline;
+}
+
+/* Hide the mobile menu on larger screens */
+.bm-menu-wrap {
+  display: none;
+}
+
+.bm-burger-button {
+  display: none; /* Hide the burger button by default */
+}
+
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .bm-menu-wrap {
+    display: flex;
+    flex-direction: column;
+    top: 0px; 
+  }
+
+  .bm-burger-button {
+    display: block; /* Show the burger button on small screens */
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 36px;
+    border-radius: 10%;
+    z-index: 2000 !important;
+  }
 }
 
 .logo-container {
@@ -127,17 +233,4 @@ header {
   right:  -40px;
   border-bottom-left-radius: 20px;
   box-shadow: -20px 0 0 0 #ffffff;
-}
-
-.selector-row {
-  width: 100%;
-  height: 5px;
-  background-color: #ffffff;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-
-.selector-row-hover {
-  background-color: #1d5c27;
 }

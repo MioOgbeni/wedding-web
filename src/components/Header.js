@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
+import { slide as Menu } from 'react-burger-menu';
 import './Header.css'; // Import the CSS for styling
 import logo from '../assets/images/logo.svg';
 
 function Header() {
-  const [hoveredItem, setHoveredItem] = useState(null);
-
   return (
     <header>
       <Link to="/">
@@ -14,15 +13,12 @@ function Header() {
           <img src={logo}alt="Naše svatební pečeť" className="logo" />
         </div>
       </Link>
-      <nav>
+      <nav className="desktop-menu">
         <ul className="nav-links">
           <li className="nav-item">
             <NavLink 
               to="/info" 
               className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
-              onMouseEnter={() => !document.querySelector('.nav-link.active[href="/info"]') && setHoveredItem('hover')}
-              onClick={() => setHoveredItem(null)}
-              onMouseLeave={() => setHoveredItem(null)}
             >
               Informace
             </NavLink>
@@ -31,9 +27,6 @@ function Header() {
             <NavLink 
               to="/program" 
               className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
-              onMouseEnter={() => !document.querySelector('.nav-link.active[href="/program"]') && setHoveredItem('hover')}
-              onClick={() => setHoveredItem(null)}
-              onMouseLeave={() => setHoveredItem(null)}
             >
               Program
             </NavLink>
@@ -42,16 +35,17 @@ function Header() {
             <NavLink 
               to="/rsvp" 
               className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
-              onMouseEnter={() => !document.querySelector('.nav-link.active[href="/rsvp"]') && setHoveredItem('hover')}
-              onClick={() => setHoveredItem(null)}
-              onMouseLeave={() => setHoveredItem(null)}
             >
               RSVP
             </NavLink>
           </li>
         </ul>
       </nav>
-      <div className={`selector-row ${hoveredItem ? `selector-row-${hoveredItem}` : ``}`}></div>
+      <Menu right className="mobile-menu">
+        <NavLink to="/info" className="menu-item">Informace</NavLink>
+        <NavLink to="/program" className="menu-item">Program</NavLink>
+        <NavLink to="/rsvp" className="menu-item">RSVP</NavLink>
+      </Menu>
     </header>
   );
 }

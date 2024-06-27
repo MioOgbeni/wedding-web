@@ -28,6 +28,7 @@
 /* Use the custom font in your body or specific elements */
 body {
   font-family: 'FenomenSans', sans-serif;
+  min-width: 300px !important;
 }
 
 .App {
