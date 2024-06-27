@@ -5,6 +5,7 @@ header {
   padding: 20px;
   padding-bottom: 0px;
   background-color: #2e7a3c;
+  font-weight: 300;
 }
 
 .logo-container {
@@ -28,7 +29,7 @@ header {
   padding: 0;
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 0px;
 }
 
@@ -43,9 +44,9 @@ header {
   text-decoration: none;
   color: #ffffff;
   font-size: 18px;
-  padding: 15px 20px;
+  padding: 15px 15px;
   border-radius: 20px 20px 0px 0px;
-  width: 100px;
+  width: 85px;
   text-align: center;
   position: relative; /* Needed for the pseudo-elements */
   z-index: 1; /* Ensure it is above the pseudo-elements */
