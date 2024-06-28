@@ -1,8 +1,0 @@
-/* Gifts.css */
-.gifts {
-  width: 100%;       /* Adjust the width as needed */
-  height: 1000vh;     /* Adjust the height based on your layout */
-  overflow: hidden;  /* Prevents scrolling inside the iframe */
-  margin-top: 50px;
-}
-  

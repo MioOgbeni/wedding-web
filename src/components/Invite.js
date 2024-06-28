@@ -1,9 +1,11 @@
 import React from 'react';
+import inviteIcon from '../assets/images/oznameni_final_web.png';
+import './Invite.css'; // Import the CSS file for styling
 
 function Invite() {
   return (
-    <div>
-      <h1>Invite</h1>
+    <div className="details-container">
+      <img src={inviteIcon} alt="Pozvánka" className="inviteImage" />
     </div>
   );
 }

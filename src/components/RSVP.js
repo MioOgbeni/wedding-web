@@ -1,10 +1,11 @@
 import React from 'react';
-import './RSVP.css'; // If you have specific styles for this page
+import './RSVP.css';
 
 function RSVP() {
   return (
-    <div className="rsvp-container">
+    <div className="details-container rsvp-container">
       <iframe 
+        title="Svatební dozváník"
         src="https://docs.google.com/forms/d/e/1FAIpQLSdtxV6558WzIh37v_FxoaOxVgjumtGA67qHw-texNNeaRqX8A/viewform?embedded=true" 
         width="100%" 
         height="100%" 

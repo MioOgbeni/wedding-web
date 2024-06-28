@@ -76,6 +76,13 @@ header {
   height: 100%;
   width: 10px; /* Adjust the width of the shadow */
   box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3); /* Add shadow on the left */
+  opacity: 0; /* Hide by default */
+  transition: all 1s ease;
+}
+
+/* Show the shadow when the menu is open */
+.menu-open::before {
+  opacity: 1; /* Show when menu is open */
 }
 
 .bm-morph-shape {

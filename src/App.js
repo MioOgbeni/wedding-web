@@ -8,9 +8,10 @@ import Info from './components/Info';
 import Program from './components/Program';
 import RSVP from './components/RSVP';
 import Gifts from './components/Gifts';
+import Footer from './components/Footer';
 import './App.css'; // Main app styles, if necessary
+import './components/Global.css'; // Global styles, if necessary
 import { ReactComponent as Arrow } from "./assets/images/tree.svg";
-import PropTypes from 'prop-types';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/rsvp" element={<RSVP />} />
           <Route path="/gifts" element={<Gifts />} />
         </Routes>
+        <Footer />
       </div>
       <ScrollToTop smooth top={200} component={<Arrow />} style={{ backgroundColor: "#2e7a3c" }} color="#ffffff"/>
     </Router>

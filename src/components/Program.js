@@ -5,7 +5,7 @@ import treeIcon from '../assets/images/tree-green.svg';
 
 function Program() {
   return (
-    <div className="program-details-container">
+    <div className="details-container">
       {/* <h1 className="program-details-header">PROGRAM</h1> */}
       <div className="program-details-point">
         <img src={timeIcon} alt="Čas ikona" className="program-details-icon" />

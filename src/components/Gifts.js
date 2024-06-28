@@ -1,9 +1,8 @@
 import React from 'react';
-import './Gifts.css'; // If you have specific styles for this page
 
 function Gifts() {
   return (
-    <div className='gifts'>
+    <div className='details-container'>
       <h1>Dary</h1>
     </div>
   );

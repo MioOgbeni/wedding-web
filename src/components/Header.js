@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect  } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
 import { slide as Menu } from 'react-burger-menu';
 import './Header.css'; // Import the CSS for styling
@@ -11,6 +11,14 @@ function Header() {
   const closeMenu = () => {
     setIsOpen(false);
   };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.querySelector('.bm-menu-wrap').classList.add('menu-open');
+    } else {
+      document.querySelector('.bm-menu-wrap').classList.remove('menu-open');
+    }
+  }, [isOpen]);
 
   return (
     <header>
@@ -55,9 +63,11 @@ function Header() {
           </li>
         </ul>
       </nav>
-      <Menu right className="mobile-menu"
+      <Menu 
+        right
         isOpen={isOpen} 
         onStateChange={(state) => setIsOpen(state.isOpen)}
+        className={isOpen ? 'menu-open' : ''}
       >
         <NavLink to="/rsvp" onClick={closeMenu} className={`menu-item-${location.pathname === '/rsvp' ? 'active' : ''}`}>RSVP</NavLink>
         <NavLink to="/program" onClick={closeMenu} className={`menu-item-${location.pathname === '/program' ? 'active' : ''}`}>PROGRAM</NavLink>
