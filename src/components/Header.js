@@ -34,7 +34,7 @@ function Header() {
               to="/program" 
               className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
             >
-              Program
+              PROGRAM
             </NavLink>
           </li>
           <li className="nav-item">
@@ -42,7 +42,7 @@ function Header() {
               to="/info" 
               className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
             >
-              Informace
+              INFORMACE
             </NavLink>
           </li>
           <li className="nav-item">
@@ -50,7 +50,7 @@ function Header() {
               to="/gifts" 
               className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
             >
-              Dary
+              DARY
             </NavLink>
           </li>
         </ul>
@@ -60,9 +60,9 @@ function Header() {
         onStateChange={(state) => setIsOpen(state.isOpen)}
       >
         <NavLink to="/rsvp" onClick={closeMenu} className={`menu-item-${location.pathname === '/rsvp' ? 'active' : ''}`}>RSVP</NavLink>
-        <NavLink to="/program" onClick={closeMenu} className={`menu-item-${location.pathname === '/program' ? 'active' : ''}`}>Program</NavLink>
-        <NavLink to="/info" onClick={closeMenu} className={`menu-item-${location.pathname === '/info' ? 'active' : ''}`}>Informace</NavLink>
-        <NavLink to="/gifts" onClick={closeMenu} className={`menu-item-${location.pathname === '/gifts' ? 'active' : ''}`}>Dary</NavLink>
+        <NavLink to="/program" onClick={closeMenu} className={`menu-item-${location.pathname === '/program' ? 'active' : ''}`}>PROGRAM</NavLink>
+        <NavLink to="/info" onClick={closeMenu} className={`menu-item-${location.pathname === '/info' ? 'active' : ''}`}>INFORMACE</NavLink>
+        <NavLink to="/gifts" onClick={closeMenu} className={`menu-item-${location.pathname === '/gifts' ? 'active' : ''}`}>DARY</NavLink>
       </Menu>
     </header>
   );

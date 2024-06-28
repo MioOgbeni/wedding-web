@@ -9,20 +9,25 @@ function Program() {
       {/* <h1 className="program-details-header">PROGRAM</h1> */}
       <div className="program-details-point">
         <img src={timeIcon} alt="Čas ikona" className="program-details-icon" />
+        <h2 className="program-details-title">13.00–14. 00</h2>
         <p className="program-details-description">
-          13.00–14. 00 Příjezd hostů
+           příjezd hostů
         </p>
+        <h2 className="program-details-title">14.30</h2>
         <p className="program-details-description">
-          14.30 Obřad
+          OBŘAD
         </p>
+        <h2 className="program-details-title">15.00</h2>
         <p className="program-details-description">
-          15.00 Přípitek a krájení dortu
+          přípitek a krájení dortu
         </p>
+        <h2 className="program-details-title">15.30</h2>
         <p className="program-details-description">
-        15.30 Grilovačka a volná zábava
+          grilovačka a volná zábava
         </p>
+        <h2 className="program-details-title">22.00</h2>
         <p className="program-details-description">
-        22.00 odjezd
+          odjezd
         </p>
       </div>
       <div className="program-details-point">

@@ -19,7 +19,7 @@
   width: 70px; /* Adjust size as needed */
   height: auto;
   display: block;
-  margin: 0 auto 10px;
+  margin: 0 auto 20px;
 }
 
 .program-details-icon-small {
@@ -33,8 +33,9 @@
   font-size: 24px;
   font-weight: normal;
   color: #2e7a3c; /* Adjust the color to match the style */
-  margin: 10px 0;
-  font-weight: 400;
+  margin: 0px;
+  margin-top: 10px;
+  font-weight: 600;
 }
 
 .program-details-description {
@@ -42,6 +43,7 @@
   color: #2e7a3c;
   max-width: 600px;
   margin: 0 auto;
-  line-height: 2.1;
+  line-height: 1.5;
   font-weight: 400;
+  margin-bottom: 30px;
 }
