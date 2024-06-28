@@ -6,9 +6,9 @@ import treeIcon from '../assets/images/tree-green.svg';
 function Program() {
   return (
     <div className="details-container">
-      {/* <h1 className="program-details-header">PROGRAM</h1> */}
       <div className="program-details-point">
-        <img src={timeIcon} alt="Čas ikona" className="program-details-icon" />
+        <img src={timeIcon} alt="Program ikona" className="details-icon" />
+        <h2 className="details-title">Program</h2>
         <h2 className="program-details-title">13.00–14. 00</h2>
         <p className="program-details-description">
            příjezd hostů
