@@ -23,10 +23,10 @@ function Header() {
         <ul className="nav-links">
           <li className="nav-item">
             <NavLink 
-              to="/info" 
+              to="/rsvp" 
               className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
             >
-              Informace
+              RSVP
             </NavLink>
           </li>
           <li className="nav-item">
@@ -39,10 +39,18 @@ function Header() {
           </li>
           <li className="nav-item">
             <NavLink 
-              to="/rsvp" 
+              to="/info" 
               className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
             >
-              RSVP
+              Informace
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink 
+              to="/gifts" 
+              className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+            >
+              Dary
             </NavLink>
           </li>
         </ul>
@@ -54,7 +62,7 @@ function Header() {
         <NavLink to="/rsvp" onClick={closeMenu} className={`menu-item-${location.pathname === '/rsvp' ? 'active' : ''}`}>RSVP</NavLink>
         <NavLink to="/program" onClick={closeMenu} className={`menu-item-${location.pathname === '/program' ? 'active' : ''}`}>Program</NavLink>
         <NavLink to="/info" onClick={closeMenu} className={`menu-item-${location.pathname === '/info' ? 'active' : ''}`}>Informace</NavLink>
-        <NavLink to="/gifts" onClick={closeMenu} className={`menu-item-${location.pathname === '/info' ? 'active' : ''}`}>Dary</NavLink>
+        <NavLink to="/gifts" onClick={closeMenu} className={`menu-item-${location.pathname === '/gifts' ? 'active' : ''}`}>Dary</NavLink>
       </Menu>
     </header>
   );
