@@ -57,11 +57,11 @@ header {
   position: relative;
   height: 100%;
   background: #ffffff;
-  background-image: url('../assets/images/kvetiny_bitova-mapa.png');
+  background-image: url('../assets/images/ilustrace2.png');
   background-size: 90%;
   background-repeat: no-repeat;
   background-position-x: 100px;
-  background-position-y: 150px;
+  background-position-y: 250px;
   padding: 1.5em 1.5em 0;
   font-size: 1.4em;
   font-family: FenomenSans;
@@ -92,11 +92,13 @@ header {
   display: inline-block;
   text-decoration: none;
   color: #2e7a3c;
-  margin-bottom: 15px !important;
+  margin-bottom: 18px !important;
 }
 
-.bm-item:active {
-  color: red !important;
+.menu-item-active {
+  text-decoration: underline;
+  text-underline-position: below;
+  text-underline-offset: 7px;
 }
 
 /* Hide the mobile menu on larger screens */

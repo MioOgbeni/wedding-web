@@ -8,7 +8,7 @@ import Info from './components/Info';
 import Program from './components/Program';
 import RSVP from './components/RSVP';
 import './App.css'; // Main app styles, if necessary
-import { ReactComponent as Arrow } from "./assets/images/arrow.svg";
+import { ReactComponent as Arrow } from "./assets/images/tree.svg";
 
 function App() {
   return (
