@@ -29,7 +29,8 @@ function Info() {
         <h2 className="details-title">Dresscode</h2>
         <p className="details-description">
           Pohodlné oblečení vhodné na zahradu ke grilování a otevřenému ohni.
-          Saka a drahé róby nechte prosím doma. Barevnost oděvu ponecháme na vás.
+          Saka a drahé róby nechte prosím doma. 
+          Barevnost oděvu ponecháme na vás.
           Budeme rádi, pokud se vyvarujete křiklavým barvám a zelené.
         </p>
       </div>
@@ -54,7 +55,7 @@ function Info() {
         <h2 className="details-title">Doprava</h2>
         <p className="details-description">
           Pokud potřebujete zařídit dopravu z/do Trokavce, dejte včas vědět.
-          Pokusíme se vám ji zajistit sběrný odvoz s ostatními svatebčany,
+          Pokusíme se vám zajistit sběrný odvoz s ostatními svatebčany,
           kteří jedou autem, z Prahy, Plzně či Rokycan.
         </p>
       </div>
@@ -90,8 +91,8 @@ function Info() {
         <h2 className="details-title">Zázemí</h2>
         <p className="details-description">
           Na úschovu vašich věcí a převlékání bude přístupná maringotka.
-          Toaleta je zde řešena suchým záchodem.
-          Voda na mytí je dostupná v maringotce.
+          <br/>Toaleta je zde řešena suchým záchodem.
+          <br/>Pitná tekoucí voda je dostupná u maringotky.
         </p>
       </div>
       <div className="details-point" onClick={handleRSVPClick} style={{ cursor: 'pointer' }}>
@@ -100,7 +101,7 @@ function Info() {
         <p className="details-description">
           Kvůli omezené kapacitě je pozvánka určena pouze adresovaným osobám.
           Potvrďte prosím účast vyplněním dorazníku. Stačí kliknout kamkoliv na tuto kartu.
-          Děkujeme.
+          <br/>Děkujeme.
         </p>
       </div>
     </div>

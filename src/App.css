@@ -31,6 +31,14 @@ body {
   min-width: 300px !important;
 }
 
+p {
+  white-space: pre-line;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  orphans: 3;
+  text-wrap: balance;
+}
+
 .App {
   text-align: center;
 }

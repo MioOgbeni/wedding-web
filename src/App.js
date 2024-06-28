@@ -10,6 +10,7 @@ import RSVP from './components/RSVP';
 import Gifts from './components/Gifts';
 import './App.css'; // Main app styles, if necessary
 import { ReactComponent as Arrow } from "./assets/images/tree.svg";
+import PropTypes from 'prop-types';
 
 function App() {
   return (

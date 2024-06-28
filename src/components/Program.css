@@ -1,8 +1,47 @@
-/* Program.css */
-.program {
-  width: 100%;       /* Adjust the width as needed */
-  height: 1000vh;     /* Adjust the height based on your layout */
-  overflow: hidden;  /* Prevents scrolling inside the iframe */
-  margin-top: 50px;
+.program-details-container {
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
 }
-  
+
+.program-details-header {
+  font-size: 36px;
+  font-weight: normal;
+  color: #2e7a3c; /* Adjust the color to match the style */
+  margin-bottom: 100px;
+}
+
+.program-details-point {
+  margin-bottom: 80px;
+}
+
+.program-details-icon {
+  width: 70px; /* Adjust size as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.program-details-icon-small {
+  width: 30px; /* Adjust size as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.program-details-title {
+  font-size: 24px;
+  font-weight: normal;
+  color: #2e7a3c; /* Adjust the color to match the style */
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+.program-details-description {
+  font-size: 23px;
+  color: #2e7a3c;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 2.1;
+  font-weight: 400;
+}
