@@ -8,6 +8,7 @@ import Info from './components/Info';
 import Program from './components/Program';
 import RSVP from './components/RSVP';
 import './App.css'; // Main app styles, if necessary
+import { ReactComponent as Arrow } from "./assets/images/arrow.svg";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           <Route path="/rsvp" element={<RSVP />} />
         </Routes>
       </div>
-      <ScrollToTop smooth top={200} style={{ backgroundColor: "#2e7a3c" }} color="#ffffff"/>
+      <ScrollToTop smooth top={200} component={<Arrow />} style={{ backgroundColor: "#2e7a3c" }} color="#ffffff"/>
     </Router>
   );
 }

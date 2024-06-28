@@ -37,6 +37,10 @@ header {
   background: #2e7a3c; /* Match the background color to remove hover effect */
 }
 
+.bm-logo-container {
+  width: 30%;
+}
+
 /* Remove hover effects on burger icon */
 .bm-cross {
   background: #2e7a3c !important;
@@ -53,6 +57,11 @@ header {
   position: relative;
   height: 100%;
   background: #ffffff;
+  background-image: url('../assets/images/kvetiny_bitova-mapa.png');
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position-x: 100px;
+  background-position-y: 150px;
   padding: 1.5em 1.5em 0;
   font-size: 1.4em;
   font-family: FenomenSans;
@@ -76,6 +85,7 @@ header {
 .bm-item-list {
   color: #2e7a3c;
   padding: 0.8em;
+  height: 50% !important;
 }
 
 .bm-item {
