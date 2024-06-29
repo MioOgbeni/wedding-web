@@ -16,7 +16,6 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 10px;
 }
 
 .cat-icon {
