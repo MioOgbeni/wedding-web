@@ -7,6 +7,11 @@ const LnPaymentQrCode = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(lnInvoice);
+    alert('LN faktura byla zkopírována do schránky.');
+  };
+
   const generateLnInvoice = async () => {
     setLoading(true);
     setError(null);
@@ -31,7 +36,7 @@ const LnPaymentQrCode = () => {
       </button>
       <p className="details-description">*Každá LN faktura je splatná pouze jednou.<br/>Částku zadáte až ve své peněžence.</p>
       {error && <p className="details-description">Error: {error}</p>}
-      {lnInvoice && <QRCode renderAs={'svg'} level={'Q'} includeMargin={true} value={lnInvoice} className='details-qr'/>}
+      {lnInvoice && <QRCode onClick={copyToClipboard} renderAs={'svg'} level={'Q'} includeMargin={true} value={lnInvoice} className='details-qr ln-invoice'/>}
     </div>
   );
 };
