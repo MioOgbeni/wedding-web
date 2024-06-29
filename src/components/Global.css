@@ -19,6 +19,10 @@
   margin-bottom: 60px;
 }
 
+.details-point-program {
+  margin-bottom: 30px;
+}
+
 .details-icon {
   width: 50px; /* Adjust size as needed */
   height: auto;
@@ -26,11 +30,27 @@
   margin: 0 auto 10px;
 }
 
+.details-icon-program {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  display: block;
+  margin: 0px auto;
+}
+
 .details-title {
   font-size: 24px;
   font-weight: normal;
   color: #2e7a3c; /* Adjust the color to match the style */
   margin: 10px 0;
+  font-weight: 400;
+}
+
+.details-title-program {
+  font-size: 24px;
+  font-weight: normal;
+  color: #2e7a3c; /* Adjust the color to match the style */
+  margin-block-start: 0px;
+  margin-block-end: 0px;
   font-weight: 400;
 }
 

@@ -1,0 +1,21 @@
+/* Contacts.css */
+.contacts-container {
+  height: 100vh !important;     /* Adjust the height based on your layout */
+}
+
+.iframe-map {
+  display: block;
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .iframe-map {
+    width: 90vw;
+    height: 60vw;
+  }
+}
+  

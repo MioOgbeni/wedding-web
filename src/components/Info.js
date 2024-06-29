@@ -10,7 +10,7 @@ import transportIcon from '../assets/images/transport.svg';
 import sleepingIcon from '../assets/images/sleeping.svg';
 import photosIcon from '../assets/images/photos.svg';
 import cateringIcon from '../assets/images/catering.svg';
-import needsIcon from '../assets/images/needs.svg';
+import needsIcon from '../assets/images/zazemi2.svg';
 import rsvpIcon from '../assets/images/rsvp.svg';
 
 

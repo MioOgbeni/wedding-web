@@ -20,6 +20,25 @@ function Header() {
     }
   }, [isOpen]);
 
+  const renderSwitch = (param) => {
+    switch(param) {
+      case '/':
+        return '';
+      case '/rsvp':
+        return 'RSVP';
+      case '/program':
+        return 'PROGRAM';
+      case '/info':
+        return 'INFORMACE';
+      case '/contacts':
+        return 'KONTAKTY';
+      case '/gifts':
+        return 'DARY';
+      default:
+        return 'UNDEFINED';
+    }
+  };
+
   return (
     <header>
       <Link to="/">
@@ -55,6 +74,14 @@ function Header() {
           </li>
           <li className="nav-item">
             <NavLink 
+              to="/contacts" 
+              className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+            >
+              KONTAKTY
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink 
               to="/gifts" 
               className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
             >
@@ -72,8 +99,12 @@ function Header() {
         <NavLink to="/rsvp" onClick={closeMenu} className={`menu-item-${location.pathname === '/rsvp' ? 'active' : ''}`}>RSVP</NavLink>
         <NavLink to="/program" onClick={closeMenu} className={`menu-item-${location.pathname === '/program' ? 'active' : ''}`}>PROGRAM</NavLink>
         <NavLink to="/info" onClick={closeMenu} className={`menu-item-${location.pathname === '/info' ? 'active' : ''}`}>INFORMACE</NavLink>
+        <NavLink to="/contacts" onClick={closeMenu} className={`menu-item-${location.pathname === '/contacts' ? 'active' : ''}`}>KONTAKTY</NavLink>
         <NavLink to="/gifts" onClick={closeMenu} className={`menu-item-${location.pathname === '/gifts' ? 'active' : ''}`}>DARY</NavLink>
       </Menu>
+      <div className="mobile-title">
+        {renderSwitch(location.pathname)}
+      </div>
     </header>
   );
 }

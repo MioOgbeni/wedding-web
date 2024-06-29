@@ -1,7 +1,6 @@
 import React from 'react';
 import './Gifts.css';
 import giftIcon from '../assets/images/gift.svg';
-import heartIcon from '../assets/images/heart.svg';
 import LnPaymentQrCode from './LnPaymentQrCode';
 import bankQR from '../assets/images/generatedQR.png';
 
@@ -21,8 +20,7 @@ function Gifts() {
         Kromě finančního daru rádi přijmeme jakoukoliv pomoc při přípravách a organizaci našeho dne. 
         </p>
         <p className="details-description">
-        <b>Děkujeme.</b><br/>
-        <img src={heartIcon} alt="Srdce ikona" className="heart-icon" />
+        Děkujeme.
         </p>
       </div>
       <div className="details-point">
