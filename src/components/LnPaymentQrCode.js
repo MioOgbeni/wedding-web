@@ -12,12 +12,11 @@ const LnPaymentQrCode = () => {
     setError(null);
 
     try {
-      const amount = 1000; // Amount in millisatoshis (1 satoshi = 1000 millisatoshis)
-      const address = 'tomnov@bitlifi.com'; // Replace with your LNURL address
-      const lnurl = `https://lnurlpay.com/${address}/${amount}`;
+      const response = await axios.post('https://lnurl.novak.my/convert', {
+        input: 'tomnov@bitlifi.com',
+      });
 
-      const response = await axios.get(lnurl);
-      setLnInvoice(response.data.pr);
+      setLnInvoice(response.data.bolt11Invoice);
     } catch (err) {
       setError(err.message);
     } finally {
@@ -27,12 +26,12 @@ const LnPaymentQrCode = () => {
 
   return (
     <div>
-      <button onClick={generateLnInvoice} disabled={loading}>
-        {loading ? 'Generating...' : 'Generate Invoice'}
+      <button className={'buttons'} onClick={generateLnInvoice} disabled={loading}>
+        {loading ? 'Generuji LN fakturu...' : 'Vygenerovat LN fakturu'}
       </button>
-      {error && <p>Error: {error}</p>}
-      {lnInvoice && <p>{lnInvoice}</p>}
-      {lnInvoice && <QRCode value={lnInvoice} className='details-qr'/>}
+      <p className="details-description">*Každá LN faktura je splatná pouze jednou.<br/>Částku zadáte až ve své peněžence.</p>
+      {error && <p className="details-description">Error: {error}</p>}
+      {lnInvoice && <QRCode renderAs={'svg'} level={'Q'} includeMargin={true} value={lnInvoice} className='details-qr'/>}
     </div>
   );
 };

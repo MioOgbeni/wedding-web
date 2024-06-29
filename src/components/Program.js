@@ -1,37 +1,37 @@
 import React from 'react';
-import './Program.css'; // If you have specific styles for this page
-import timeIcon from '../assets/images/time.svg';
-import treeIcon from '../assets/images/tree-green.svg';
 
 function Program() {
   return (
     <div className="details-container">
-      <div className="program-details-point">
-        <img src={timeIcon} alt="Program ikona" className="details-icon" />
-        <h2 className="details-title">Program</h2>
-        <h2 className="program-details-title">13.00–14. 00</h2>
-        <p className="program-details-description">
+      <div className="details-point">
+        <h2 className="details-title">13.00–14.00</h2>
+        <p className="details-description">
            příjezd hostů
         </p>
-        <h2 className="program-details-title">14.30</h2>
-        <p className="program-details-description">
-          OBŘAD
-        </p>
-        <h2 className="program-details-title">15.00</h2>
-        <p className="program-details-description">
-          přípitek a krájení dortu
-        </p>
-        <h2 className="program-details-title">15.30</h2>
-        <p className="program-details-description">
-          grilovačka a volná zábava
-        </p>
-        <h2 className="program-details-title">22.00</h2>
-        <p className="program-details-description">
-          odjezd
+      </div>
+      <div className="details-point">
+        <h2 className="details-title">14.30</h2>
+        <p className="details-description">
+          <b>OBŘAD</b>
         </p>
       </div>
-      <div className="program-details-point">
-        <img src={treeIcon} alt="Stromeček ikona" className="program-details-icon-small" />
+      <div className="details-point">
+        <h2 className="details-title">15.00</h2>
+        <p className="details-description">
+          přípitek a krájení dortu
+        </p>
+      </div>
+      <div className="details-point">
+        <h2 className="details-title">15.30</h2>
+        <p className="details-description">
+          grilovačka a volná zábava
+        </p>
+      </div>
+      <div className="details-point">
+        <h2 className="details-title">22.00</h2>
+        <p className="details-description">
+          odjezd
+        </p>
       </div>
     </div>
   );

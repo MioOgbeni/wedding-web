@@ -26,7 +26,7 @@ function Gifts() {
         </p>
       </div>
       <div className="details-point">
-        <h2 className="details-title">Bankonvní spojení</h2>
+        <h2 className="details-title">Bankovní spojení</h2>
         <img src={bankQR} alt="Bankovní spojení" className="details-qr" />
       </div>
       <div className="details-point">
