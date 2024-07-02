@@ -1,7 +1,5 @@
 import React from 'react';
 import './Contacts.css';
-//import dresscodeIcon from '../assets/images/dresscode.svg';
-import phoneCallIcon from '../assets/images/phone-call.svg';
 
 function Contacts() {
   return (
@@ -26,14 +24,15 @@ function Contacts() {
       <div className="details-point">
         <h2 className="details-title-program">Lucie a Tomáš</h2>
         <p className="details-description">
-        <img src={phoneCallIcon} alt="Telefon ikona" className="phone-call-icon" /><a className="tel" href="tel:+420605070685">605 070 685</a> / <img src={phoneCallIcon} alt="Telefon ikona" className="phone-call-icon" /><a className="tel" href="tel:+420735511128">735 511 128</a>
+          snoubenci<br/>
+          <a className="tel" href="tel:+420605070685">605 070 685</a> / <a className="tel" href="tel:+420735511128">735 511 128</a>
         </p>
       </div>
       <div className="details-point">
         <h2 className="details-title-program">Karolína a Tomáš</h2>
         <p className="details-description">
           svědkové<br/>
-          <img src={phoneCallIcon} alt="Telefon ikona" className="phone-call-icon" /><a className="tel" href="tel:+420606289385">606 289 385</a> / <img src={phoneCallIcon} alt="Telefon ikona" className="phone-call-icon" /><a className="tel" href="tel:+420720571551">720 571 551</a>
+          <a className="tel" href="tel:+420606289385">606 289 385</a> / <a className="tel" href="tel:+420720571551">720 571 551</a>
         </p>
       </div>
     </div>
