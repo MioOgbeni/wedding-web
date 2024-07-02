@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import QRCode from 'qrcode.react';
 import axios from 'axios';
+import LNURLPay from './LNURLPay';
 
 const LnPaymentQrCode = () => {
   const [lnInvoice, setLnInvoice] = useState('');
@@ -46,6 +47,7 @@ const LnPaymentQrCode = () => {
       <p className="details-description">*Každá LN faktura je splatná pouze jednou.<br/>Částku zadáte až ve své peněžence.</p>
       {error && <p className="details-description">Error: {error}</p>}
       {lnInvoice && <QRCode onClick={openWallet} renderAs={'svg'} level={'Q'} includeMargin={true} value={lnInvoice} className='details-qr ln-invoice'/>}
+      <LNURLPay />
     </div>
   );
 };
