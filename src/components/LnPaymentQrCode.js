@@ -29,6 +29,15 @@ const LnPaymentQrCode = () => {
     }
   };
 
+  const openWallet = () => {
+    if (lnInvoice) {
+      const url = `lightning:${lnInvoice}`;
+      window.location.href = url;
+    } else {
+      alert('Payment request not available');
+    }
+  };
+
   return (
     <div>
       <button className={'buttons'} onClick={generateLnInvoice} disabled={loading}>
@@ -36,7 +45,7 @@ const LnPaymentQrCode = () => {
       </button>
       <p className="details-description">*Každá LN faktura je splatná pouze jednou.<br/>Částku zadáte až ve své peněžence.</p>
       {error && <p className="details-description">Error: {error}</p>}
-      {lnInvoice && <QRCode onClick={copyToClipboard} renderAs={'svg'} level={'Q'} includeMargin={true} value={lnInvoice} className='details-qr ln-invoice'/>}
+      {lnInvoice && <QRCode onClick={openWallet} renderAs={'svg'} level={'Q'} includeMargin={true} value={lnInvoice} className='details-qr ln-invoice'/>}
     </div>
   );
 };

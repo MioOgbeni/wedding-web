@@ -1,8 +1,4 @@
 /* Contacts.css */
-.contacts-container {
-  height: 100vh !important;     /* Adjust the height based on your layout */
-}
-
 .iframe-map {
   display: block;
   width: 600px;
