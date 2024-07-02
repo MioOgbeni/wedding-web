@@ -13,12 +13,16 @@ import Contacts from './components/Contacts';
 import './App.css'; // Main app styles, if necessary
 import './components/Global.css'; // Global styles, if necessary
 import { ReactComponent as Arrow } from "./assets/images/tree.svg";
+import { Helmet } from 'react-helmet';
 
 function App() {
   return (
     <Router>
       <ScrollToOrigin />
       <div>
+        <Helmet>
+          <meta name="robots" content="index, follow" />
+        </Helmet>
         <Header />
         <Routes>
           <Route path="/" element={<Invite />} />

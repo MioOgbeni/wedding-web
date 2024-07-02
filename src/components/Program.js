@@ -1,11 +1,11 @@
 import React from 'react';
 import grillIcon from '../assets/images/catering.svg';
 //import cakeIcon from '../assets/images/krajeni.svg';
-import leaveIcon from '../assets/images/odjezd1.svg';
+import leaveIcon from '../assets/images/rucicka.svg';
 //import leave2Icon from '../assets/images/odjezd2.svg';
 import cheersIcon from '../assets/images/pripitek.svg';
 import arriveIcon from '../assets/images/prijezd2.svg';
-import heartIcon from '../assets/images/needs.svg';
+import heartIcon from '../assets/images/srdicko.svg';
 
 function Program() {
   return (
