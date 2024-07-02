@@ -1,7 +1,7 @@
 import React from 'react';
 import './Gifts.css';
 import giftIcon from '../assets/images/gift.svg';
-import LnPaymentQrCode from './LnPaymentQrCode';
+import LnPayment from './LnPayment';
 import bankQR from '../assets/images/generatedQR.png';
 
 function Gifts() {
@@ -14,7 +14,7 @@ function Gifts() {
         Tím největším darem pro nás bude, když náš den strávíte s námi. Pokud chcete, budeme rádi když nám přispějete na naši svatební cestu. 
         </p>
         <p className="details-description">
-        Níže necháváme QR kódy s platebními metodami. Do zprávy pro příjemce nám napište svůj tip na destinaci.
+        Níže necháváme QR kódy s platebními metodami. Do zprávy pro příjemce nám můžete napsat svůj tip na destinaci, kterou stojí za to navštívit.
         </p>
         <p className="details-description">
         Kromě finančního daru rádi přijmeme jakoukoliv pomoc při přípravách a organizaci našeho dne. 
@@ -29,7 +29,7 @@ function Gifts() {
       </div>
       <div className="details-point">
         <h2 className="details-title">BTC Lightning</h2>
-        <LnPaymentQrCode />
+        <LnPayment />
       </div>
     </div>
   );

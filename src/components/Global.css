@@ -65,14 +65,14 @@
 }
 
 .buttons {
-  padding: 10px 20px;
+  padding: 10px 10px;
   margin: 10px;
   border: none;
   border-radius: 5px;
   background-color: #2e7a3c;
   color: white;
   cursor: pointer;
-  width: 180px;
+  width: 220px;
 }
 
 .buttons:hover {

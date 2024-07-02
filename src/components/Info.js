@@ -92,7 +92,7 @@ function Info() {
         <p className="details-description">
           Na úschovu vašich věcí a převlékání bude přístupná maringotka.
           <br/>Toaleta je zde řešena suchým záchodem.
-          <br/>Pitná tekoucí voda je dostupná u maringotky.
+          <br/>Tekoucí pitná voda je dostupná venku u maringotky.
         </p>
       </div>
       <div className="details-point" onClick={handleRSVPClick} style={{ cursor: 'pointer' }}>

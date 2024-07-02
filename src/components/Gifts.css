@@ -20,10 +20,12 @@
 
 @media (max-width: 768px) {
   .details-qr {
-    width: 300px;
+    width: 260px;
   }
 }
 
 .ln-invoice {
   cursor: pointer;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import inviteIcon from '../assets/images/oznameni_final_web.png';
+import inviteIcon from '../assets/images/oznameni_online.png';
 import './Invite.css'; // Import the CSS file for styling
 
 function Invite() {
