@@ -72,7 +72,7 @@ function Info() {
         <h2 className="details-title">Zázemí</h2>
         <p className="details-description">
         Na úschovu vašich věcí a převlékání bude přístupná maringotka.
-        Sedět budeme venku u ohně na dřevěných paletách, židlých či dekách. Počítejte s tím, že se můžete ušpinit.
+        Sedět budeme venku u ohně na dřevěných paletách, židlích či dekách. Počítejte s tím, že se můžete ušpinit.
         Toaleta je zde řešena suchým záchodem.
         Tekoucí pitná voda je dostupná venku u maringotky.
         </p>
