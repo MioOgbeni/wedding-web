@@ -11,7 +11,7 @@ function Gifts() {
         <img src={giftIcon} alt="Dárek ikona" className="details-icon" />
         <h2 className="details-title">Dary</h2>
         <p className="details-description">
-        Tím největším darem pro nás bude, když náš den strávíte s námi. Pokud chcete, budeme rádi když nám přispějete na naši svatební cestu. 
+        Tím největším darem pro nás bude, když náš den strávíte s námi. Pokud chcete, budeme rádi, když nám přispějete na naši svatební cestu. 
         </p>
         <p className="details-description">
         Níže necháváme QR kódy s platebními metodami. Do zprávy pro příjemce nám můžete napsat svůj tip na destinaci, kterou stojí za to navštívit.
