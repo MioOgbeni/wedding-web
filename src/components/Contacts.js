@@ -5,7 +5,7 @@ function Contacts() {
   return (
     <div className="details-container contacts-container">
       <div className="details-point">
-        <h2 className="details-title">Místo konání</h2>
+        <h2 className="details-title-program">Místo konání</h2>
         <p className="details-description">
             Trokavec 69, Mirošov
         </p>
@@ -22,14 +22,14 @@ function Contacts() {
         </div>
       </div>
       <div className="details-point">
-        <h2 className="details-title">Lucie a Tomáš</h2>
+        <h2 className="details-title-program">Lucie a Tomáš</h2>
         <p className="details-description">
           snoubenci<br/>
           <a className="tel" href="tel:+420605070685">605 070 685</a> / <a className="tel" href="tel:+420735511128">735 511 128</a>
         </p>
       </div>
       <div className="details-point">
-        <h2 className="details-title">Karolína a Tomáš</h2>
+        <h2 className="details-title-program">Karolína a Tomáš</h2>
         <p className="details-description">
           svědkové<br/>
           <a className="tel" href="tel:+420606289385">606 289 385</a> / <a className="tel" href="tel:+420720571551">720 571 551</a>

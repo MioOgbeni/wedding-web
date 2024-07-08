@@ -12,7 +12,7 @@ import photosIcon from '../assets/images/photos.svg';
 import cateringIcon from '../assets/images/catering.svg';
 import needsIcon from '../assets/images/zazemi2.svg';
 import rsvpIcon from '../assets/images/rsvp.svg';
-import animalsIcon from '../assets/images/ovce.svg';
+import animalsIcon from '../assets/images/zvirata.svg';
 
 function Info() {
   const navigate = useNavigate();
