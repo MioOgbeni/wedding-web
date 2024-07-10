@@ -28,14 +28,14 @@ function Program() {
         <img src={cheersIcon} alt="Přípitek ikona" className="details-icon" />
         <h2 className="details-title-program">15.00</h2>
         <p className="details-description">
-          přípitek a krájení dortu
+          přípitek a&nbsp;krájení dortu
         </p>
       </div>
       <div className="details-point-program">
         <img src={grillIcon} alt="Grilovačka ikona" className="details-icon" />
         <h2 className="details-title-program">15.30</h2>
         <p className="details-description">
-          grilovačka a volná zábava
+          grilovačka a&nbsp;volná zábava
         </p>
       </div>
       <div className="details-point-program">
