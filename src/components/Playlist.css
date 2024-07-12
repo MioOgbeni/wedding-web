@@ -1,0 +1,33 @@
+.details-icon-spotify {
+  width: 44px; /* Adjust size as needed */
+  height: auto;
+  display: block;
+  margin: 3px auto 13px;
+}
+
+.spotify-player {
+  display: block;
+  margin: 0 auto 0;
+  max-width: 550px !important;
+  min-width: 250px !important;
+}
+
+.spotify-code-wrap {
+  background-color: #2e7a3c;
+  margin-bottom: -10px;
+  padding-bottom: 10px;
+  border-radius: 12px 12px 0 0;
+}
+
+.spotify-code {
+  width: 35%; /* Adjust size as needed */
+  height: auto;
+  margin: 0 auto 0;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .spotify-code {
+    width: 150px;
+  }
+}

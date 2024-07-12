@@ -34,6 +34,8 @@ function Header() {
         return 'KONTAKTY';
       case '/gifts':
         return 'DARY';
+        case '/playlist':
+          return 'PLAYLIST';
       default:
         return 'UNDEFINED';
     }
@@ -88,6 +90,14 @@ function Header() {
               DARY
             </NavLink>
           </li>
+          <li className="nav-item">
+            <NavLink 
+              to="/playlist" 
+              className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+            >
+              PLAYLIST
+            </NavLink>
+          </li>
         </ul>
       </nav>
       <Menu 
@@ -101,6 +111,7 @@ function Header() {
         <NavLink to="/info" onClick={closeMenu} className={`menu-item-${location.pathname === '/info' ? 'active' : ''}`}>INFORMACE</NavLink>
         <NavLink to="/contacts" onClick={closeMenu} className={`menu-item-${location.pathname === '/contacts' ? 'active' : ''}`}>KONTAKTY</NavLink>
         <NavLink to="/gifts" onClick={closeMenu} className={`menu-item-${location.pathname === '/gifts' ? 'active' : ''}`}>DARY</NavLink>
+        <NavLink to="/playlist" onClick={closeMenu} className={`menu-item-${location.pathname === '/playlist' ? 'active' : ''}`}>PLAYLIST</NavLink>
       </Menu>
       <div className="mobile-title">
         {renderSwitch(location.pathname)}

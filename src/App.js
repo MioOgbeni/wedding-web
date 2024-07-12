@@ -10,6 +10,7 @@ import RSVP from './components/RSVP';
 import Gifts from './components/Gifts';
 import Footer from './components/Footer';
 import Contacts from './components/Contacts';
+import Playlist from './components/Playlist';
 import './App.css'; // Main app styles, if necessary
 import './components/Global.css'; // Global styles, if necessary
 import { ReactComponent as Arrow } from "./assets/images/tree.svg";
@@ -31,6 +32,7 @@ function App() {
           <Route path="/rsvp" element={<RSVP />} />
           <Route path="/gifts" element={<Gifts />} />
           <Route path="/contacts" element={<Contacts />} />
+          <Route path="/playlist" element={<Playlist />} />
         </Routes>
         <Footer />
       </div>
